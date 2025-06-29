@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Zurück",
+    "next": "Weiter",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "confirm": "Bestätigen",
+    "close": "Schließen"
+  },
+  "buttons": {
+    "connect": "Verbinden",
+    "disconnect": "Trennen",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "signup": "Registrieren",
+    "continue": "Fortfahren",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr erfahren",
+    "viewDetails": "Details anzeigen",
+    "manageWallet": "Wallet verwalten",
+    "addWallet": "Wallet hinzufügen",
+    "setPrimary": "Als primär festlegen",
+    "remove": "Entfernen",
+    "rename": "Umbenennen"
+  },
+  "status": {
+    "connected": "Verbunden",
+    "disconnected": "Nicht verbunden",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "pending": "Ausstehend",
+    "loading": "Lädt...",
+    "success": "Erfolg",
+    "error": "Fehler",
+    "warning": "Warnung"
+  },
+  "forms": {
+    "email": "E-Mail",
+    "password": "Passwort",
+    "name": "Name",
+    "phone": "Telefon",
+    "amount": "Betrag",
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "placeholder": {
+      "email": "E-Mail eingeben",
+      "password": "Passwort eingeben",
+      "name": "Name eingeben",
+      "phone": "Telefonnummer eingeben",
+      "amount": "Betrag eingeben"
+    },
+    "validation": {
+      "required": "Dieses Feld ist erforderlich",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail ein",
+      "invalidPhone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "passwordTooShort": "Passwort muss mindestens 6 Zeichen lang sein"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "Tage",
+    "months": "Monate",
+    "years": "Jahre",
+    "remaining": "verbleibend"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Voltar",
+    "next": "Próximo",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "close": "Fechar"
+  },
+  "buttons": {
+    "connect": "Conectar",
+    "disconnect": "Desconectar",
+    "login": "Entrar",
+    "logout": "Sair",
+    "signup": "Registrar",
+    "continue": "Continuar",
+    "getStarted": "Começar",
+    "learnMore": "Saiba mais",
+    "viewDetails": "Ver detalhes",
+    "manageWallet": "Gerenciar carteira",
+    "addWallet": "Adicionar carteira",
+    "setPrimary": "Definir como principal",
+    "remove": "Remover",
+    "rename": "Renomear"
+  },
+  "status": {
+    "connected": "Conectado",
+    "disconnected": "Não conectado",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "pending": "Pendente",
+    "loading": "Carregando...",
+    "success": "Sucesso",
+    "error": "Erro",
+    "warning": "Aviso"
+  },
+  "forms": {
+    "email": "E-mail",
+    "password": "Senha",
+    "name": "Nome",
+    "phone": "Telefone",
+    "amount": "Valor",
+    "required": "Obrigatório",
+    "optional": "Opcional",
+    "placeholder": {
+      "email": "Digite seu e-mail",
+      "password": "Digite sua senha",
+      "name": "Digite seu nome",
+      "phone": "Digite seu telefone",
+      "amount": "Digite o valor"
+    },
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "invalidEmail": "Digite um e-mail válido",
+      "invalidPhone": "Digite um telefone válido",
+      "passwordTooShort": "A senha deve ter pelo menos 6 caracteres"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "dias",
+    "months": "meses",
+    "years": "anos",
+    "remaining": "restantes"
+  }
+}

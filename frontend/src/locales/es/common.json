@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Atrás",
+    "next": "Siguiente",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "close": "Cerrar"
+  },
+  "buttons": {
+    "connect": "Conectar",
+    "disconnect": "Desconectar",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "signup": "Registrarse",
+    "continue": "Continuar",
+    "getStarted": "Comenzar",
+    "learnMore": "Más Información",
+    "viewDetails": "Ver Detalles",
+    "manageWallet": "Gestionar Cartera",
+    "addWallet": "Añadir Cartera",
+    "setPrimary": "Establecer Principal",
+    "remove": "Eliminar",
+    "rename": "Renombrar"
+  },
+  "status": {
+    "connected": "Conectado",
+    "disconnected": "No Conectado",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "pending": "Pendiente",
+    "loading": "Cargando...",
+    "success": "Éxito",
+    "error": "Error",
+    "warning": "Advertencia"
+  },
+  "forms": {
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "amount": "Cantidad",
+    "required": "Requerido",
+    "optional": "Opcional",
+    "placeholder": {
+      "email": "Ingresa tu correo electrónico",
+      "password": "Ingresa tu contraseña",
+      "name": "Ingresa tu nombre",
+      "phone": "Ingresa tu número de teléfono",
+      "amount": "Ingresa la cantidad"
+    },
+    "validation": {
+      "required": "Este campo es requerido",
+      "invalidEmail": "Por favor ingresa un correo electrónico válido",
+      "invalidPhone": "Por favor ingresa un número de teléfono válido",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "días",
+    "months": "meses",
+    "years": "años",
+    "remaining": "restantes"
+  }
+}

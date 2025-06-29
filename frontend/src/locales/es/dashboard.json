@@ -1,0 +1,40 @@
+{
+  "title": "Panel de Control",
+  "welcome": "Bienvenido a VonVault",
+  "subtitle": "Tu Plataforma de Inversión DeFi",
+  "quickActions": {
+    "title": "Acciones Rápidas",
+    "myInvestments": {
+      "title": "Mis Inversiones",
+      "subtitle": "Ver y Seguir"
+    },
+    "newInvestment": {
+      "title": "Nueva Inversión",
+      "subtitle": "Empezar a Ganar"
+    },
+    "cryptoWallet": {
+      "title": "Cartera Crypto",
+      "subtitle": "Depositar • Gestionar"
+    },
+    "availableFunds": {
+      "title": "Fondos Disponibles",
+      "subtitle": "Banco • Saldo"
+    }
+  },
+  "portfolio": {
+    "totalInvested": "Total Invertido",
+    "totalEarned": "Total Ganado",
+    "activeInvestments": "Inversiones Activas"
+  },
+  "membership": {
+    "currentTier": "Membresía Actual",
+    "nextTier": "Siguiente Nivel",
+    "progress": "Progreso al siguiente nivel"
+  },
+  "walletStatus": {
+    "connected": "Cartera Conectada",
+    "disconnected": "Conectar Cartera",
+    "change": "Cambiar",
+    "manage": "Gestionar"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Indietro",
+    "next": "Avanti",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "confirm": "Conferma",
+    "close": "Chiudi"
+  },
+  "buttons": {
+    "connect": "Connetti",
+    "disconnect": "Disconnetti",
+    "login": "Accedi",
+    "logout": "Esci",
+    "signup": "Registrati",
+    "continue": "Continua",
+    "getStarted": "Inizia",
+    "learnMore": "Scopri di più",
+    "viewDetails": "Visualizza dettagli",
+    "manageWallet": "Gestisci portafoglio",
+    "addWallet": "Aggiungi portafoglio",
+    "setPrimary": "Imposta come principale",
+    "remove": "Rimuovi",
+    "rename": "Rinomina"
+  },
+  "status": {
+    "connected": "Connesso",
+    "disconnected": "Non connesso",
+    "active": "Attivo",
+    "inactive": "Inattivo",
+    "pending": "In attesa",
+    "loading": "Caricamento...",
+    "success": "Successo",
+    "error": "Errore",
+    "warning": "Avviso"
+  },
+  "forms": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Nome",
+    "phone": "Telefono",
+    "amount": "Importo",
+    "required": "Obbligatorio",
+    "optional": "Opzionale",
+    "placeholder": {
+      "email": "Inserisci la tua email",
+      "password": "Inserisci la password",
+      "name": "Inserisci il tuo nome",
+      "phone": "Inserisci il numero di telefono",
+      "amount": "Inserisci importo"
+    },
+    "validation": {
+      "required": "Questo campo è obbligatorio",
+      "invalidEmail": "Inserisci un'email valida",
+      "invalidPhone": "Inserisci un numero di telefono valido",
+      "passwordTooShort": "La password deve essere di almeno 6 caratteri"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "giorni",
+    "months": "mesi",
+    "years": "anni",
+    "remaining": "rimanenti"
+  }
+}
