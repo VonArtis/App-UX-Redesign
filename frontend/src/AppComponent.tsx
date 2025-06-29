@@ -3,6 +3,7 @@ import type { ScreenType, User } from './types';
 import { AppProvider } from './context/AppContext';
 import { useApp } from './context/AppContext';
 import { useAuth } from './hooks/useAuth';
+import { MobileLayoutWithTabs } from './components/layout/MobileLayoutWithTabs';
 
 // Screen imports
 import { WelcomeScreen } from './components/screens/WelcomeScreen';
