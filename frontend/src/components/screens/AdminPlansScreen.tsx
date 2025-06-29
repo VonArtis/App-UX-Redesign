@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ScreenProps, InvestmentPlan, InvestmentPlanCreate } from '../../types';
-import { ScreenHeader } from '../layout/ScreenHeader';
+import { CleanHeader } from '../layout/CleanHeader';
+import { MobileLayoutWithTabs } from '../layout/MobileLayoutWithTabs';
 import { Card } from '../common/Card';
 import { Button } from '../common/Button';
 import { Input } from '../common/Input';
@@ -129,8 +130,8 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-      <ScreenHeader title="Manage Investment Plans" onBack={onBack} />
+    <MobileLayoutWithTabs showTabs={false}>
+      <CleanHeader title="⚙️ Manage Investment Plans" onBack={onBack} />
 
       {!showCreateForm ? (
         <>
@@ -175,7 +176,7 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
                     onClick={() => handleEdit(plan)}
                     variant="secondary"
                     size="sm"
-                    className="flex-1"
+                    className="flex-1 min-h-[44px]"
                   >
                     Edit
                   </Button>
@@ -184,7 +185,7 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
                       onClick={() => handleDelete(plan)}
                       variant="secondary"
                       size="sm"
-                      className="flex-1 bg-red-600 hover:bg-red-700"
+                      className="flex-1 min-h-[44px] bg-red-600 hover:bg-red-700"
                     >
                       Deactivate
                     </Button>
@@ -197,7 +198,7 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
           {/* Create New Plan Button */}
           <Button
             onClick={() => setShowCreateForm(true)}
-            fullWidth
+            className="w-full min-h-[44px] h-16 bg-purple-400 hover:bg-purple-500"
             size="lg"
           >
             + Create New Investment Plan
@@ -226,7 +227,7 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
                 value={formData.description}
                 onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                 placeholder="Brief description of the investment plan"
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent min-h-[44px]"
                 rows={3}
               />
             </div>
@@ -267,12 +268,12 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
               placeholder="Leave empty for no limit"
             />
 
-            <div className="flex items-center">
+            <div className="flex items-center min-h-[44px]">
               <input
                 type="checkbox"
                 checked={formData.is_active}
                 onChange={(e) => setFormData({ ...formData, is_active: e.target.checked })}
-                className="mr-2 accent-purple-600"
+                className="mr-2 accent-purple-600 w-4 h-4"
               />
               <label className="text-sm text-gray-300">Plan is active and available to users</label>
             </div>
@@ -282,20 +283,20 @@ export const AdminPlansScreen: React.FC<ScreenProps> = ({ onBack }) => {
           <div className="flex space-x-4">
             <Button
               onClick={handleSubmit}
-              className="flex-1"
+              className="flex-1 min-h-[44px] bg-purple-400 hover:bg-purple-500"
             >
               {editingPlan ? 'Update Plan' : 'Create Plan'}
             </Button>
             <Button
               onClick={resetForm}
               variant="secondary"
-              className="flex-1"
+              className="flex-1 min-h-[44px]"
             >
               Cancel
             </Button>
           </div>
         </>
       )}
-    </div>
+    </MobileLayoutWithTabs>
   );
 };
