@@ -1,41 +1,34 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
 
 interface BottomTabsProps {
   onNavigate?: (screen: string) => void;
+  currentScreen?: string;
 }
 
-export const BottomTabs: React.FC<BottomTabsProps> = ({ onNavigate }) => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
+export const BottomTabs: React.FC<BottomTabsProps> = ({ onNavigate, currentScreen }) => {
   const tabs = [
     {
       id: 'home',
       icon: '🏠',
       label: 'Home',
-      path: '/dashboard',
       screen: 'dashboard'
     },
     {
       id: 'portfolio',
       icon: '💼',
       label: 'Portfolio',
-      path: '/investments',
       screen: 'investments'
     },
     {
       id: 'wallets',
       icon: '🔗',
       label: 'Wallets',
-      path: '/crypto',
       screen: 'crypto'
     },
     {
       id: 'profile',
       icon: '👤',
       label: 'Profile',
-      path: '/profile',
       screen: 'profile'
     }
   ];
@@ -43,15 +36,12 @@ export const BottomTabs: React.FC<BottomTabsProps> = ({ onNavigate }) => {
   const handleTabPress = (tab: typeof tabs[0]) => {
     if (onNavigate) {
       onNavigate(tab.screen);
-    } else {
-      navigate(tab.path);
     }
   };
 
   const isActiveTab = (tab: typeof tabs[0]) => {
-    if (location.pathname === tab.path) return true;
-    if (tab.id === 'home' && location.pathname === '/') return true;
-    return false;
+    return currentScreen === tab.screen || 
+           (tab.screen === 'dashboard' && currentScreen === 'dashboard');
   };
 
   return (
