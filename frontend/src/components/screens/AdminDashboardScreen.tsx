@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ScreenProps } from '../../types';
-import { ScreenHeader } from '../layout/ScreenHeader';
+import { CleanHeader } from '../layout/CleanHeader';
+import { MobileLayoutWithTabs } from '../layout/MobileLayoutWithTabs';
 import { Card } from '../common/Card';
 import { Button } from '../common/Button';
 import { FullScreenLoader } from '../common/LoadingSpinner';
@@ -75,34 +76,34 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
 
   if (error) {
     return (
-      <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-        <ScreenHeader title="Admin Dashboard" onBack={onBack} />
+      <MobileLayoutWithTabs showTabs={false}>
+        <CleanHeader title="Admin Dashboard" onBack={onBack} />
         <Card className="text-center">
           <div className="text-red-400 mb-4">⚠️</div>
           <h3 className="text-lg font-semibold mb-2">Access Error</h3>
           <p className="text-gray-400 mb-4">{error}</p>
-          <Button onClick={() => window.location.reload()} variant="primary">
+          <Button onClick={() => window.location.reload()} className="bg-purple-400 hover:bg-purple-500">
             Retry
           </Button>
         </Card>
-      </div>
+      </MobileLayoutWithTabs>
     );
   }
 
   if (!overview) {
     return (
-      <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-        <ScreenHeader title="Admin Dashboard" onBack={onBack} />
+      <MobileLayoutWithTabs showTabs={false}>
+        <CleanHeader title="Admin Dashboard" onBack={onBack} />
         <div className="text-center text-gray-400 mt-8">
           No data available
         </div>
-      </div>
+      </MobileLayoutWithTabs>
     );
   }
 
   return (
-    <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-      <ScreenHeader 
+    <MobileLayoutWithTabs showTabs={false}>
+      <CleanHeader 
         title="🛠️ Admin Dashboard" 
         onBack={onBack}
         action={
@@ -110,6 +111,7 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
             onClick={fetchOverview} 
             size="sm" 
             variant="outline"
+            className="min-h-[44px]"
           >
             ↻ Refresh
           </Button>
@@ -199,7 +201,7 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
       <div className="grid grid-cols-1 gap-4 mb-6">
         <Button
           onClick={() => onNavigate?.('admin-users')}
-          className="h-16 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 flex items-center justify-between px-6"
+          className="min-h-[44px] h-16 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 flex items-center justify-between px-6"
         >
           <div className="flex items-center gap-3">
             <span className="text-2xl">👥</span>
@@ -213,7 +215,7 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
 
         <Button
           onClick={() => onNavigate?.('admin-investments')}
-          className="h-16 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 flex items-center justify-between px-6"
+          className="min-h-[44px] h-16 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 flex items-center justify-between px-6"
         >
           <div className="flex items-center gap-3">
             <span className="text-2xl">📊</span>
@@ -227,7 +229,7 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
 
         <Button
           onClick={() => onNavigate?.('admin-crypto')}
-          className="h-16 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 flex items-center justify-between px-6"
+          className="min-h-[44px] h-16 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 flex items-center justify-between px-6"
         >
           <div className="flex items-center gap-3">
             <span className="text-2xl">🔗</span>
@@ -241,7 +243,7 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
 
         <Button
           onClick={() => onNavigate?.('admin-plans')}
-          className="h-16 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 flex items-center justify-between px-6"
+          className="min-h-[44px] h-16 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 flex items-center justify-between px-6"
         >
           <div className="flex items-center gap-3">
             <span className="text-2xl">⚙️</span>
@@ -270,6 +272,6 @@ export const AdminDashboardScreen: React.FC<ScreenProps> = ({ onBack, onNavigate
           <div className="text-sm text-cyan-300">Recent Investments</div>
         </Card>
       </div>
-    </div>
+    </MobileLayoutWithTabs>
   );
 };

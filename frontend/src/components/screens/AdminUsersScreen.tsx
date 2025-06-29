@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ScreenProps } from '../../types';
-import { ScreenHeader } from '../layout/ScreenHeader';
+import { CleanHeader } from '../layout/CleanHeader';
+import { MobileLayoutWithTabs } from '../layout/MobileLayoutWithTabs';
 import { Card } from '../common/Card';
 import { Button } from '../common/Button';
 import { Input } from '../common/Input';
@@ -118,8 +119,8 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
   }
 
   return (
-    <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-      <ScreenHeader 
+    <MobileLayoutWithTabs showTabs={false}>
+      <CleanHeader 
         title="👥 User Management" 
         onBack={onBack}
         action={
@@ -128,6 +129,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
             size="sm" 
             variant="outline"
             disabled={loading}
+            className="min-h-[44px]"
           >
             {loading ? '↻' : '⟲'}
           </Button>
@@ -144,7 +146,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
               placeholder="Search by email, name, or user ID..."
               className="flex-1"
             />
-            <Button onClick={handleSearch} disabled={loading}>
+            <Button onClick={handleSearch} disabled={loading} className="min-h-[44px] bg-purple-400 hover:bg-purple-500">
               Search
             </Button>
           </div>
@@ -154,6 +156,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
               onClick={() => setFilterVerified(null)}
               variant={filterVerified === null ? "primary" : "outline"}
               size="sm"
+              className={`min-h-[44px] ${filterVerified === null ? 'bg-purple-400 hover:bg-purple-500' : ''}`}
             >
               All Users
             </Button>
@@ -161,6 +164,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
               onClick={() => setFilterVerified(true)}
               variant={filterVerified === true ? "primary" : "outline"}
               size="sm"
+              className={`min-h-[44px] ${filterVerified === true ? 'bg-purple-400 hover:bg-purple-500' : ''}`}
             >
               Verified Only
             </Button>
@@ -168,6 +172,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
               onClick={() => setFilterVerified(false)}
               variant={filterVerified === false ? "primary" : "outline"}
               size="sm"
+              className={`min-h-[44px] ${filterVerified === false ? 'bg-purple-400 hover:bg-purple-500' : ''}`}
             >
               Unverified Only
             </Button>
@@ -183,7 +188,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
           return (
             <Card 
               key={adminUser.id} 
-              className="cursor-pointer hover:bg-gray-800/50 transition-colors"
+              className="cursor-pointer hover:bg-gray-800/50 transition-colors min-h-[44px]"
               onClick={() => handleUserClick(adminUser.user_id)}
             >
               <div className="flex items-center justify-between">
@@ -266,6 +271,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
                 disabled={currentPage <= 1 || loading}
                 size="sm"
                 variant="outline"
+                className="min-h-[44px]"
               >
                 Previous
               </Button>
@@ -274,6 +280,7 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
                 disabled={currentPage >= pagination.total_pages || loading}
                 size="sm"
                 variant="outline"
+                className="min-h-[44px]"
               >
                 Next
               </Button>
@@ -292,6 +299,6 @@ export const AdminUsersScreen: React.FC<ScreenProps> = ({ onBack, onNavigate }) 
           </p>
         </Card>
       )}
-    </div>
+    </MobileLayoutWithTabs>
   );
 };
