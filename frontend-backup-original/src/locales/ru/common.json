@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Назад",
+    "next": "Далее",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "confirm": "Подтвердить",
+    "close": "Закрыть"
+  },
+  "buttons": {
+    "connect": "Подключить",
+    "disconnect": "Отключить",
+    "login": "Войти",
+    "logout": "Выйти",
+    "signup": "Регистрация",
+    "continue": "Продолжить",
+    "getStarted": "Начать",
+    "learnMore": "Узнать больше",
+    "viewDetails": "Подробности",
+    "manageWallet": "Управление кошельком",
+    "addWallet": "Добавить кошелек",
+    "setPrimary": "Сделать основным",
+    "remove": "Удалить",
+    "rename": "Переименовать"
+  },
+  "status": {
+    "connected": "Подключено",
+    "disconnected": "Не подключено",
+    "active": "Активно",
+    "inactive": "Неактивно",
+    "pending": "В ожидании",
+    "loading": "Загрузка...",
+    "success": "Успешно",
+    "error": "Ошибка",
+    "warning": "Предупреждение"
+  },
+  "forms": {
+    "email": "Email",
+    "password": "Пароль",
+    "name": "Имя",
+    "phone": "Телефон",
+    "amount": "Сумма",
+    "required": "Обязательно",
+    "optional": "Необязательно",
+    "placeholder": {
+      "email": "Введите email",
+      "password": "Введите пароль",
+      "name": "Введите имя",
+      "phone": "Введите телефон",
+      "amount": "Введите сумму"
+    },
+    "validation": {
+      "required": "Это поле обязательно",
+      "invalidEmail": "Введите действительный email",
+      "invalidPhone": "Введите действительный номер телефона",
+      "passwordTooShort": "Пароль должен содержать не менее 6 символов"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "дней",
+    "months": "месяцев",
+    "years": "лет",
+    "remaining": "осталось"
+  }
+}

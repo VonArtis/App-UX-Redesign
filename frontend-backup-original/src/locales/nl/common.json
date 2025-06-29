@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Terug",
+    "next": "Volgende",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "confirm": "Bevestigen",
+    "close": "Sluiten"
+  },
+  "buttons": {
+    "connect": "Verbinden",
+    "disconnect": "Verbinding verbreken",
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "signup": "Registreren",
+    "continue": "Doorgaan",
+    "getStarted": "Aan de slag",
+    "learnMore": "Meer leren",
+    "viewDetails": "Details bekijken",
+    "manageWallet": "Portemonnee beheren",
+    "addWallet": "Portemonnee toevoegen",
+    "setPrimary": "Als primair instellen",
+    "remove": "Verwijderen",
+    "rename": "Hernoemen"
+  },
+  "status": {
+    "connected": "Verbonden",
+    "disconnected": "Niet verbonden",
+    "active": "Actief",
+    "inactive": "Inactief",
+    "pending": "In behandeling",
+    "loading": "Laden...",
+    "success": "Succes",
+    "error": "Fout",
+    "warning": "Waarschuwing"
+  },
+  "forms": {
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "name": "Naam",
+    "phone": "Telefoon",
+    "amount": "Bedrag",
+    "required": "Verplicht",
+    "optional": "Optioneel",
+    "placeholder": {
+      "email": "Voer uw e-mail in",
+      "password": "Voer uw wachtwoord in",
+      "name": "Voer uw naam in",
+      "phone": "Voer uw telefoonnummer in",
+      "amount": "Voer bedrag in"
+    },
+    "validation": {
+      "required": "Dit veld is verplicht",
+      "invalidEmail": "Voer een geldig e-mailadres in",
+      "invalidPhone": "Voer een geldig telefoonnummer in",
+      "passwordTooShort": "Wachtwoord moet minimaal 6 tekens zijn"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "dagen",
+    "months": "maanden",
+    "years": "jaren",
+    "remaining": "resterend"
+  }
+}

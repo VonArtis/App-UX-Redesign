@@ -1,0 +1,40 @@
+{
+  "title": "Dashboard",
+  "welcome": "Welcome to VonVault",
+  "subtitle": "Your DeFi Investment Platform",
+  "quickActions": {
+    "title": "Quick Actions",
+    "myInvestments": {
+      "title": "My Investments",
+      "subtitle": "View & Track"
+    },
+    "newInvestment": {
+      "title": "New Investment",
+      "subtitle": "Start Earning"
+    },
+    "cryptoWallet": {
+      "title": "Crypto Wallet",
+      "subtitle": "Deposit • Manage"
+    },
+    "availableFunds": {
+      "title": "Available Funds",
+      "subtitle": "Bank • Balance"
+    }
+  },
+  "portfolio": {
+    "totalInvested": "Total Invested",
+    "totalEarned": "Total Earned",
+    "activeInvestments": "Active Investments"
+  },
+  "membership": {
+    "currentTier": "Current Membership",
+    "nextTier": "Next Tier",
+    "progress": "Progress to next tier"
+  },
+  "walletStatus": {
+    "connected": "Wallet Connected",
+    "disconnected": "Connect Wallet",
+    "change": "Change",
+    "manage": "Manage"
+  }
+}
