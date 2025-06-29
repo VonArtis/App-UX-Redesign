@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ScreenProps } from '../../types';
-import { ScreenHeader } from '../layout/ScreenHeader';
+import { CleanHeader } from '../layout/CleanHeader';
+import { MobileLayoutWithTabs } from '../layout/MobileLayoutWithTabs';
 import { Card } from '../common/Card';
 import { Button } from '../common/Button';
 import { FullScreenLoader } from '../common/LoadingSpinner';
@@ -105,25 +106,25 @@ export const AdminUserDetailsScreen: React.FC<ScreenProps & { userId?: string }>
 
   if (error || !userDetails) {
     return (
-      <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-        <ScreenHeader title="User Details" onBack={onBack} />
+      <MobileLayoutWithTabs showTabs={false}>
+        <CleanHeader title="User Details" onBack={onBack} />
         <Card className="text-center">
           <div className="text-red-400 mb-4">⚠️</div>
           <h3 className="text-lg font-semibold mb-2">Error Loading User</h3>
           <p className="text-gray-400 mb-4">{error || 'User not found'}</p>
-          <Button onClick={() => window.location.reload()} variant="primary">
+          <Button onClick={() => window.location.reload()} className="bg-purple-400 hover:bg-purple-500">
             Retry
           </Button>
         </Card>
-      </div>
+      </MobileLayoutWithTabs>
     );
   }
 
   const { user: userInfo, investments, crypto_transactions, membership } = userDetails;
 
   return (
-    <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-      <ScreenHeader 
+    <MobileLayoutWithTabs showTabs={false}>
+      <CleanHeader 
         title="👤 User Details" 
         onBack={onBack}
         action={
@@ -131,6 +132,7 @@ export const AdminUserDetailsScreen: React.FC<ScreenProps & { userId?: string }>
             onClick={fetchUserDetails} 
             size="sm" 
             variant="outline"
+            className="min-h-[44px]"
           >
             ↻ Refresh
           </Button>
@@ -362,6 +364,6 @@ export const AdminUserDetailsScreen: React.FC<ScreenProps & { userId?: string }>
           </div>
         </div>
       </Card>
-    </div>
+    </MobileLayoutWithTabs>
   );
 };

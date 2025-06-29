@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ScreenProps } from '../../types';
-import { ScreenHeader } from '../layout/ScreenHeader';
+import { CleanHeader } from '../layout/CleanHeader';
+import { MobileLayoutWithTabs } from '../layout/MobileLayoutWithTabs';
 import { Card } from '../common/Card';
 import { Button } from '../common/Button';
 import { FullScreenLoader } from '../common/LoadingSpinner';
@@ -98,17 +99,17 @@ export const AdminInvestmentsScreen: React.FC<ScreenProps> = ({ onBack }) => {
 
   if (error || !analytics) {
     return (
-      <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-        <ScreenHeader title="Investment Analytics" onBack={onBack} />
+      <MobileLayoutWithTabs showTabs={false}>
+        <CleanHeader title="Investment Analytics" onBack={onBack} />
         <Card className="text-center">
           <div className="text-red-400 mb-4">⚠️</div>
           <h3 className="text-lg font-semibold mb-2">Error Loading Analytics</h3>
           <p className="text-gray-400 mb-4">{error || 'Failed to load data'}</p>
-          <Button onClick={fetchAnalytics} variant="primary">
+          <Button onClick={fetchAnalytics} className="bg-purple-400 hover:bg-purple-500">
             Retry
           </Button>
         </Card>
-      </div>
+      </MobileLayoutWithTabs>
     );
   }
 
@@ -122,8 +123,8 @@ export const AdminInvestmentsScreen: React.FC<ScreenProps> = ({ onBack }) => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white px-6 pt-12 pb-8">
-      <ScreenHeader 
+    <MobileLayoutWithTabs showTabs={false}>
+      <CleanHeader 
         title="📊 Investment Analytics" 
         onBack={onBack}
         action={
@@ -131,6 +132,7 @@ export const AdminInvestmentsScreen: React.FC<ScreenProps> = ({ onBack }) => {
             onClick={fetchAnalytics} 
             size="sm" 
             variant="outline"
+            className="min-h-[44px]"
           >
             ↻ Refresh
           </Button>
@@ -289,6 +291,6 @@ export const AdminInvestmentsScreen: React.FC<ScreenProps> = ({ onBack }) => {
           </div>
         )}
       </Card>
-    </div>
+    </MobileLayoutWithTabs>
   );
 };
