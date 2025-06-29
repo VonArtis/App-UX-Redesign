@@ -9,6 +9,7 @@ export type ScreenType =
   | '2fa-setup'
   | 'two-factor-setup'
   | '2fa-authenticator-setup'
+  | 'authenticator-setup'
   | 'enhanced-2fa-setup'
   | '2fa-sms-setup'
   | 'verification-success'
