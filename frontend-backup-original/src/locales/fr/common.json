@@ -1,0 +1,39 @@
+{
+  "navigation": {
+    "back": "Retour",
+    "next": "Suivant",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "close": "Fermer"
+  },
+  "buttons": {
+    "connect": "Connecter",
+    "disconnect": "Déconnecter",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "signup": "S'inscrire",
+    "continue": "Continuer",
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus",
+    "viewDetails": "Voir les détails",
+    "manageWallet": "Gérer le portefeuille",
+    "addWallet": "Ajouter un portefeuille",
+    "setPrimary": "Définir comme principal",
+    "remove": "Supprimer",
+    "rename": "Renommer"
+  },
+  "status": {
+    "connected": "Connecté",
+    "disconnected": "Non connecté",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "pending": "En attente",
+    "loading": "Chargement...",
+    "success": "Succès",
+    "error": "Erreur",
+    "warning": "Avertissement"
+  }
+}

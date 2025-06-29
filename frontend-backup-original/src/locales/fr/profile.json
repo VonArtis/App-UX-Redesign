@@ -1,0 +1,26 @@
+{
+  "title": "Profil et Paramètres",
+  "sections": {
+    "personalInfo": {
+      "title": "Informations Personnelles",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "userId": "ID Utilisateur",
+      "notProvided": "Non fourni"
+    },
+    "membership": {
+      "title": "Statut de Membre",
+      "viewDetails": "Voir les détails"
+    },
+    "language": {
+      "title": "Langue et Région",
+      "subtitle": "Choisissez votre langue préférée",
+      "displayLanguage": "Langue d'affichage",
+      "comingSoon": "Bientôt disponible",
+      "developmentNote": "Le support multi-langue complet est en développement. L'interface sera traduite dans la prochaine mise à jour.",
+      "changeSuccess": "Langue changée avec succès !",
+      "changeError": "Échec du changement de langue. Veuillez réessayer."
+    }
+  }
+}
