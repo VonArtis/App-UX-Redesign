@@ -5,6 +5,7 @@ interface MobileLayoutWithTabsProps {
   children: React.ReactNode;
   onNavigate?: (screen: string) => void;
   showTabs?: boolean;
+  currentScreen?: string;
   className?: string;
 }
 
@@ -12,6 +13,7 @@ export const MobileLayoutWithTabs: React.FC<MobileLayoutWithTabsProps> = ({
   children,
   onNavigate,
   showTabs = true,
+  currentScreen,
   className = ''
 }) => {
   return (
@@ -23,7 +25,7 @@ export const MobileLayoutWithTabs: React.FC<MobileLayoutWithTabsProps> = ({
       
       {/* Bottom tabs navigation */}
       {showTabs && (
-        <BottomTabs onNavigate={onNavigate} />
+        <BottomTabs onNavigate={onNavigate} currentScreen={currentScreen} />
       )}
     </div>
   );
