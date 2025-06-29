@@ -433,10 +433,37 @@ const AppRouter: React.FC = () => {
     }
   };
 
+  // Screens that should show bottom tabs (main app screens)
+  const tabScreens = ['dashboard', 'investments', 'crypto', 'profile', 'admin-dashboard', 'admin-users', 'admin-investments', 'admin-crypto', 'admin-plans'];
+  const showTabs = tabScreens.includes(screen);
+
+  // Handle bottom tab navigation
+  const handleTabNavigation = (tabScreen: string) => {
+    switch (tabScreen) {
+      case 'dashboard':
+        setScreen('dashboard');
+        break;
+      case 'investments':
+        setScreen('investments');
+        break;
+      case 'crypto':
+        setScreen('crypto');
+        break;
+      case 'profile':
+        setScreen('profile');
+        break;
+      default:
+        setScreen('dashboard');
+    }
+  };
+
   return (
-    <main className="bg-black min-h-screen text-white">
+    <MobileLayoutWithTabs 
+      showTabs={showTabs}
+      onNavigate={handleTabNavigation}
+    >
       {renderScreen()}
-    </main>
+    </MobileLayoutWithTabs>
   );
 };
 
