@@ -87,6 +87,7 @@ export interface User {
   
   // === INVESTMENT & MEMBERSHIP ===
   investment_tier?: string;
+  total_investment?: number;
   
   type?: 'bank' | 'crypto' | 'login' | 'signup' | 'email';
   auth_type?: string;
