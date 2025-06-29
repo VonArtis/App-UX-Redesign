@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "Back",
+    "next": "Next",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "close": "Close"
+  },
+  "buttons": {
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "login": "Log In",
+    "logout": "Log Out",
+    "signup": "Sign Up",
+    "continue": "Continue",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "manageWallet": "Manage Wallet",
+    "addWallet": "Add Wallet",
+    "setPrimary": "Set Primary",
+    "remove": "Remove",
+    "rename": "Rename"
+  },
+  "status": {
+    "connected": "Connected",
+    "disconnected": "Not Connected",
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning"
+  },
+  "forms": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "phone": "Phone",
+    "amount": "Amount",
+    "required": "Required",
+    "optional": "Optional",
+    "placeholder": {
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "name": "Enter your name",
+      "phone": "Enter your phone number",
+      "amount": "Enter amount"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email",
+      "invalidPhone": "Please enter a valid phone number",
+      "passwordTooShort": "Password must be at least 6 characters"
+    }
+  },
+  "currency": {
+    "usd": "USD",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "days",
+    "months": "months",
+    "years": "years",
+    "remaining": "remaining"
+  }
+}

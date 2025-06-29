@@ -1,0 +1,19 @@
+# Render deployment configuration for VonVault Backend
+
+# This file ensures proper deployment on Render.com
+# The backend will automatically use the PORT environment variable provided by Render
+
+services:
+  - type: web
+    name: vonvault-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: MONGO_URL
+        value: mongodb://localhost:27017
+      - key: DB_NAME  
+        value: vonvault
+      - key: JWT_SECRET
+        value: your-secret-key

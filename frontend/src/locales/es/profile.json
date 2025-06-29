@@ -1,0 +1,81 @@
+{
+  "title": "Perfil y Configuración",
+  "sections": {
+    "personalInfo": {
+      "title": "Información Personal",
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "userId": "ID de Usuario",
+      "notProvided": "No proporcionado"
+    },
+    "membership": {
+      "title": "Estado de Membresía",
+      "viewDetails": "Ver Detalles"
+    },
+    "enhanced2fa": {
+      "title": "Seguridad 2FA Mejorada",
+      "subtitle": "2FA Biométrico y Notificación Push",
+      "setup": "Configurar 2FA Mejorado",
+      "newPhase2": "NUEVO: Fase 2",
+      "deviceBasedSecurity": "Seguridad Basada en Dispositivo"
+    },
+    "accountStatus": {
+      "accountType": "Tipo de Cuenta",
+      "authMethod": "Método de Autenticación",
+      "memberSince": "Miembro Desde",
+      "bankConnected": "Banco Conectado",
+      "cryptoConnected": "Crypto Conectado",
+      "standardAccount": "Cuenta Estándar"
+    },
+    "language": {
+      "title": "Idioma y Región",
+      "subtitle": "Elige tu idioma preferido",
+      "displayLanguage": "Idioma de Visualización",
+      "comingSoon": "Próximamente",
+      "developmentNote": "El soporte completo multi-idioma está en desarrollo. La interfaz será traducida en la próxima actualización.",
+      "changeSuccess": "¡Idioma cambiado exitosamente!",
+      "changeError": "Error al cambiar idioma. Por favor inténtalo de nuevo."
+    },
+    "connections": {
+      "title": "Estado de Conexión",
+      "bankAccount": "Cuenta Bancaria",
+      "cryptoWallet": "Cartera Crypto"
+    },
+    "admin": {
+      "title": "Panel de Administración",
+      "subtitle": "Administración del sistema VonArtis",
+      "openDashboard": "Abrir Panel"
+    },
+    "dangerZone": {
+      "title": "Zona de Peligro",
+      "subtitle": "Eliminar permanentemente tu cuenta VonVault",
+      "deleteProfile": "Eliminar Perfil",
+      "cannotDelete": "No se puede eliminar el perfil",
+      "disconnectFirst": "Por favor desconecta",
+      "confirmDeletion": "Confirmar Eliminación de Perfil",
+      "warningMessage": "Esta acción no se puede deshacer. Todos tus datos personales serán eliminados permanentemente.",
+      "legalNote": "Los registros de inversión se conservarán por motivos legales/fiscales pero anonimizados.",
+      "enterPassword": "Ingresa tu contraseña para confirmar",
+      "confirmDelete": "Confirmar Eliminación",
+      "passwordRequired": "Se requiere contraseña para confirmar la eliminación"
+    }
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español",
+    "fr": "Francés", 
+    "de": "Alemán",
+    "it": "Italiano",
+    "pt": "Portugués",
+    "ru": "Ruso",
+    "zh": "Chino",
+    "ja": "Japonés",
+    "ko": "Coreano",
+    "ar": "Árabe",
+    "hi": "Hindi",
+    "tr": "Turco",
+    "pl": "Polaco",
+    "nl": "Holandés"
+  }
+}

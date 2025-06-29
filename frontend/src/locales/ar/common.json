@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "back": "رجوع",
+    "next": "التالي",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تحرير",
+    "delete": "حذف",
+    "confirm": "تأكيد",
+    "close": "إغلاق"
+  },
+  "buttons": {
+    "connect": "اتصال",
+    "disconnect": "قطع الاتصال",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "signup": "إنشاء حساب",
+    "continue": "متابعة",
+    "getStarted": "البدء",
+    "learnMore": "معرفة المزيد",
+    "viewDetails": "عرض التفاصيل",
+    "manageWallet": "إدارة المحفظة",
+    "addWallet": "إضافة محفظة",
+    "setPrimary": "تعيين كأساسي",
+    "remove": "إزالة",
+    "rename": "إعادة تسمية"
+  },
+  "status": {
+    "connected": "متصل",
+    "disconnected": "غير متصل",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "pending": "في الانتظار",
+    "loading": "جاري التحميل...",
+    "success": "نجح",
+    "error": "خطأ",
+    "warning": "تحذير"
+  },
+  "forms": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "amount": "المبلغ",
+    "required": "مطلوب",
+    "optional": "اختياري",
+    "placeholder": {
+      "email": "أدخل بريدك الإلكتروني",
+      "password": "أدخل كلمة المرور",
+      "name": "أدخل اسمك",
+      "phone": "أدخل رقم الهاتف",
+      "amount": "أدخل المبلغ"
+    },
+    "validation": {
+      "required": "هذا الحقل مطلوب",
+      "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+      "invalidPhone": "يرجى إدخال رقم هاتف صحيح",
+      "passwordTooShort": "يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل"
+    }
+  },
+  "currency": {
+    "usd": "دولار أمريكي",
+    "symbol": "$"
+  },
+  "time": {
+    "days": "أيام",
+    "months": "أشهر",
+    "years": "سنوات",
+    "remaining": "متبقي"
+  }
+}
