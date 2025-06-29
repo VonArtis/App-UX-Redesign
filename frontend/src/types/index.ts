@@ -90,6 +90,9 @@ export interface User {
   investment_tier?: string;
   total_investment?: number;
   
+  // === ADMIN ===
+  is_admin?: boolean;
+  
   type?: 'bank' | 'crypto' | 'login' | 'signup' | 'email';
   auth_type?: string;
   created_at?: string;
