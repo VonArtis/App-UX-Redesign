@@ -198,7 +198,7 @@ export interface Portfolio {
 // Screen component props
 export interface ScreenProps {
   onBack?: () => void;
-  onNavigate?: (screen: ScreenType) => void;
+  onNavigate?: (screen: ScreenType, params?: any) => void;
 }
 
 export interface AuthScreenProps extends ScreenProps {
