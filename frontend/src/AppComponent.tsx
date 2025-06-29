@@ -461,6 +461,7 @@ const AppRouter: React.FC = () => {
     <MobileLayoutWithTabs 
       showTabs={showTabs}
       onNavigate={handleTabNavigation}
+      currentScreen={screen}
     >
       {renderScreen()}
     </MobileLayoutWithTabs>
